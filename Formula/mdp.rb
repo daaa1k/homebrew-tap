@@ -5,21 +5,21 @@
 class Mdp < Formula
   desc "Paste clipboard image as Markdown link"
   homepage "https://github.com/daaa1k/mdp"
-  version "0.2.7"
+  version "0.2.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daaa1k/mdp/releases/download/v0.2.7/mdp_0.2.7_darwin_amd64.tar.gz"
-      sha256 "2375f69158fb9c478f69c79ff1c39c5df0069c82d1e02fbb61321a115689c1b9"
+      url "https://github.com/daaa1k/mdp/releases/download/v0.2.8/mdp_0.2.8_darwin_amd64.tar.gz"
+      sha256 "c6851e6a3a564a6829b958b7d99fdb0a7d750fdc0c1a166fb77cbddfe3139c62"
 
       define_method(:install) do
         bin.install "mdp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daaa1k/mdp/releases/download/v0.2.7/mdp_0.2.7_darwin_arm64.tar.gz"
-      sha256 "9015bf6a577aca19143187a59773a8cc6ce47947c5569e7c3364c16f998957e0"
+      url "https://github.com/daaa1k/mdp/releases/download/v0.2.8/mdp_0.2.8_darwin_arm64.tar.gz"
+      sha256 "7421875734a923e62f3f76e6bd0b38a4aa466c2e384ed61a69f59ab915196f93"
 
       define_method(:install) do
         bin.install "mdp"
@@ -29,15 +29,15 @@ class Mdp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daaa1k/mdp/releases/download/v0.2.7/mdp_0.2.7_linux_amd64.tar.gz"
-      sha256 "ac1dfe180ce000b4c5ce5c3e8f6a5313f4efba98fe15aaa6f1b9d274829163d1"
+      url "https://github.com/daaa1k/mdp/releases/download/v0.2.8/mdp_0.2.8_linux_amd64.tar.gz"
+      sha256 "99b6546739e62886b3a0ebf32c1fd9f3e1202470679ce84309f8842cdd622f10"
       define_method(:install) do
         bin.install "mdp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daaa1k/mdp/releases/download/v0.2.7/mdp_0.2.7_linux_arm64.tar.gz"
-      sha256 "dfbe1e2893870e906e59804c000404fd0883b41050dd0b7ac389a0f819e04b84"
+      url "https://github.com/daaa1k/mdp/releases/download/v0.2.8/mdp_0.2.8_linux_arm64.tar.gz"
+      sha256 "30fea0a14b73c0880f3bb004dc9ef5e88952002cd7bd4102e6a6e60fc5168988"
       define_method(:install) do
         bin.install "mdp"
       end
