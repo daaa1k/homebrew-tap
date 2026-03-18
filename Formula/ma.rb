@@ -5,21 +5,21 @@
 class Ma < Formula
   desc "MCP config adapter and tool launcher for AI coding tools"
   homepage "https://github.com/daaa1k/ma"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daaa1k/ma/releases/download/v0.1.3/ma_0.1.3_darwin_amd64.tar.gz"
-      sha256 "16a7f4ab897e6bcbd35fbfa126c1847b409fa1bc665fed9bbd822c3ed5f5c51a"
+      url "https://github.com/daaa1k/ma/releases/download/v0.1.4/ma_0.1.4_darwin_amd64.tar.gz"
+      sha256 "b9eae1e4b75593448bc59d1ef4e99d023179dc7830d4176894bc46d82a9a2073"
 
       define_method(:install) do
         bin.install "ma"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daaa1k/ma/releases/download/v0.1.3/ma_0.1.3_darwin_arm64.tar.gz"
-      sha256 "bd4003102b7d4c2748d5da5688e98424a8c165bb7af392fdadfa49e012e79de2"
+      url "https://github.com/daaa1k/ma/releases/download/v0.1.4/ma_0.1.4_darwin_arm64.tar.gz"
+      sha256 "f269e25f03b30ce4f8897b1de994207cc68b6b78f82f9bb7abd6700a000e84f5"
 
       define_method(:install) do
         bin.install "ma"
@@ -29,15 +29,15 @@ class Ma < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daaa1k/ma/releases/download/v0.1.3/ma_0.1.3_linux_amd64.tar.gz"
-      sha256 "d8f2fa6a894d9dbce205c8db78b0b546430bf28a5b63ad660f389bab03c5e48d"
+      url "https://github.com/daaa1k/ma/releases/download/v0.1.4/ma_0.1.4_linux_amd64.tar.gz"
+      sha256 "ed69229aa83da04facc45e18ea9e1a3a609d8bad960251c38028d1c67c36346d"
       define_method(:install) do
         bin.install "ma"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daaa1k/ma/releases/download/v0.1.3/ma_0.1.3_linux_arm64.tar.gz"
-      sha256 "53a50695efcb4c4eefc3edf0ff275ad398f24baf0f605dbda9adf3fb9487f4eb"
+      url "https://github.com/daaa1k/ma/releases/download/v0.1.4/ma_0.1.4_linux_arm64.tar.gz"
+      sha256 "9c2988c96884e4243f58db8c590dd3065964d0edd6d91f109f14b055c2a61819"
       define_method(:install) do
         bin.install "ma"
       end
