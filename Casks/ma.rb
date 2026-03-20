@@ -3,7 +3,7 @@ cask "ma" do
   name "ma"
   desc "MCP config adapter and tool launcher for AI coding tools"
   homepage "https://github.com/daaa1k/ma"
-  version "0.1.10"
+  version "0.1.11"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,28 @@ cask "ma" do
   on_macos do
     on_intel do
       url "https://github.com/daaa1k/ma/releases/download/v#{version}/ma_#{version}_darwin_amd64.tar.gz"
-      sha256 "d73e0ed51dda2a572488b75d05e95ef851c84b4e2918ba84cabbd8b40b7f5935"
+      sha256 "3663d18f4af9d37d371abe05d98616a6da8249e95c9622115cf9e9a796f36584"
     end
     on_arm do
       url "https://github.com/daaa1k/ma/releases/download/v#{version}/ma_#{version}_darwin_arm64.tar.gz"
-      sha256 "75fdf5538d942c793e64e98516b46b873923fad66477b52637265cd460cc3bda"
+      sha256 "fd62908b5c06c0c0c258d88c465f2b1eef3012d74874665b38a4e1413f347406"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/daaa1k/ma/releases/download/v#{version}/ma_#{version}_linux_amd64.tar.gz"
-      sha256 "2928ad95bddc2da791c5737762796e8275f4f43bda02f8fbbf2aa310f0ef6222"
+      sha256 "066dac495473ea66756f884c7602a03854abe66b9e31d4a44cab8a48f2207b6b"
     end
     on_arm do
       url "https://github.com/daaa1k/ma/releases/download/v#{version}/ma_#{version}_linux_arm64.tar.gz"
-      sha256 "382f54a15c65aa53ca7e8d7c51c945f7016d3199b2162d4396171cd105802f8e"
+      sha256 "636198035cfa70ec56c8460a9a3256a5a9c2d22776a9c711fff80aad9aad4bf3"
+    end
+  end
+
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/ma"]
     end
   end
 
