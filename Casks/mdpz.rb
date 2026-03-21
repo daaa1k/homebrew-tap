@@ -3,7 +3,7 @@ cask "mdpz" do
   name "mdpz"
   desc "Paste clipboard image as Markdown link"
   homepage "https://github.com/daaa1k/mdpz"
-  version "0.1.4"
+  version "0.1.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "mdpz" do
   on_macos do
     on_intel do
       url "https://github.com/daaa1k/mdpz/releases/download/v#{version}/mdpz_#{version}_darwin_amd64.tar.gz"
-      sha256 "838b428cef303abcc675324428143cad3ed4575c3f52c5ec01fd5c4970401b13"
+      sha256 "10fbbdf48a3d4518a57f640c312ae2237d0f1aa05a8454d7683ea27fb1a686ef"
     end
     on_arm do
       url "https://github.com/daaa1k/mdpz/releases/download/v#{version}/mdpz_#{version}_darwin_arm64.tar.gz"
-      sha256 "e839948061fc575922cf46122d41f66c1b02e669b50723fb563b64cf92543ae6"
+      sha256 "5ca0587feabc6295d8bc9177c31adfbc171d2fd841a9228a833c4acfae7d7f81"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/daaa1k/mdpz/releases/download/v#{version}/mdpz_#{version}_linux_amd64.tar.gz"
-      sha256 "5f0d2a9c56c19ca3196bfc57b9cb6ff13f9c1b022461a6bdceee192f2217a12c"
+      sha256 "0d301002bb6a88b19d48fa6f84dc82c52d08475f37ebd004b995a5446f79e5e4"
     end
     on_arm do
       url "https://github.com/daaa1k/mdpz/releases/download/v#{version}/mdpz_#{version}_linux_arm64.tar.gz"
-      sha256 "e0ceae76320cbc7c1a8b0e5da9ae41419d6a6acacff8203debfabb1075dce6e8"
+      sha256 "53863fc16fc6d5b8018d93fddd0470082ee1586e785c86b8f23850b9919a80db"
     end
   end
 
