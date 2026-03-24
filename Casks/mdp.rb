@@ -3,7 +3,7 @@ cask "mdp" do
   name "mdp"
   desc "Paste clipboard image as Markdown link"
   homepage "https://github.com/daaa1k/mdp"
-  version "0.3.9"
+  version "0.3.10"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "mdp" do
   on_macos do
     on_intel do
       url "https://github.com/daaa1k/mdp/releases/download/v#{version}/mdp_#{version}_darwin_amd64.tar.gz"
-      sha256 "40635564f94c7b599bbaf041e33420d26780ddfa44277ea72d9c3b651f2d5108"
+      sha256 "5dd77069d7c93a7a543404118cb73548cd37cb4236cd35d1251a34fc1b9e40ba"
     end
     on_arm do
       url "https://github.com/daaa1k/mdp/releases/download/v#{version}/mdp_#{version}_darwin_arm64.tar.gz"
-      sha256 "d875a1a796caad98ef90dd8adb147b66b696d249b245881fb3a35d072b1cbd2c"
+      sha256 "98f771f72bfee004f254f15e88d1ebdbfd180800ecbfbb4e0e6dd48dbf183a5e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/daaa1k/mdp/releases/download/v#{version}/mdp_#{version}_linux_amd64.tar.gz"
-      sha256 "2eecce4332d052c51b3fc3d1aa22859dea2fb35e9ae2e7344615062a332dd3b6"
+      sha256 "f9b53c7706e4b8a69507c0159ab1fb1390ab5c3b63ea5977d2dfdc552c474568"
     end
     on_arm do
       url "https://github.com/daaa1k/mdp/releases/download/v#{version}/mdp_#{version}_linux_arm64.tar.gz"
-      sha256 "1cc5ff1157e1ca4602540fc31aa56e597c046ef11f3e3b9f5899d980d38baa61"
+      sha256 "4966cf8a9502c6a1fbe0bdf08f75edf301ead9226a69298db4752e5e5e9a4620"
     end
   end
 
